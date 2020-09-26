@@ -1,13 +1,12 @@
-package com.example.demo;
+package hello.core;
 
-import com.example.demo.discount.DiscountPolicy;
-import com.example.demo.discount.FixedDiscountPolicy;
-import com.example.demo.discount.RateDiscountPolicy;
-import com.example.demo.member.MemberService;
-import com.example.demo.member.MemberServiceImpl;
-import com.example.demo.member.MemoryMemberRepository;
-import com.example.demo.order.OrderService;
-import com.example.demo.order.OrderServiceImpl;
+import hello.core.discount.DiscountPolicy;
+import hello.core.discount.RateDiscountPolicy;
+import hello.core.member.MemberService;
+import hello.core.member.MemberServiceImpl;
+import hello.core.member.MemoryMemberRepository;
+import hello.core.order.OrderService;
+import hello.core.order.OrderServiceImpl;
 
 public class AppConfig {
 

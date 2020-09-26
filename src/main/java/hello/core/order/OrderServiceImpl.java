@@ -1,9 +1,8 @@
-package com.example.demo.order;
+package hello.core.order;
 
-import com.example.demo.AppConfig;
-import com.example.demo.discount.DiscountPolicy;
-import com.example.demo.member.Member;
-import com.example.demo.member.MemberRepository;
+import hello.core.discount.DiscountPolicy;
+import hello.core.member.Member;
+import hello.core.member.MemberRepository;
 
 public class OrderServiceImpl implements OrderService{
 

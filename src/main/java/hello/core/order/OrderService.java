@@ -1,6 +1,4 @@
-package com.example.demo.order;
-
-import com.example.demo.order.Order;
+package hello.core.order;
 
 public interface OrderService {
     Order createOrder(Long memberId, String itemName, int itemPrice);
