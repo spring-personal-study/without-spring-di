@@ -16,9 +16,6 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 //@ComponentScan("hello.core")
 public class AppConfig {
 
-    AnnotationConfigApplicationContext configApplicationContext;
-    GenericXmlApplicationContext context;
-
     @Bean
     public MemberService memberService() {
         return new MemberServiceImpl(memberRepository());
