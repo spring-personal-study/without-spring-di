@@ -5,6 +5,7 @@ import hello.core.member.Member;
 import hello.core.member.MemberService;
 import hello.core.order.Order;
 import hello.core.order.OrderService;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -12,11 +13,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 @SpringBootApplication
 public class CoreApplication {
 
-/*
 	public static void main(String[] args) {
 		SpringApplication.run(CoreApplication.class, args);
 	}
-*/
 
 /*
 	// run without using Spring Framework
@@ -34,7 +33,7 @@ public class CoreApplication {
 	}
 */
 
-	public static void main(String[] args) {
+/*	public static void main(String[] args) {
 		ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
 		MemberService memberService = applicationContext.getBean("memberService", MemberService.class);
 		OrderService orderService = applicationContext.getBean("orderService", OrderService.class);
@@ -47,7 +46,7 @@ public class CoreApplication {
 
 		System.out.println("order = " + order);
 
-	}
+	}*/
 
 
 }
