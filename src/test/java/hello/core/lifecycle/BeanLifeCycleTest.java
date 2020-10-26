@@ -24,8 +24,20 @@ public class BeanLifeCycleTest {
 
     @Configuration
     static class LifeCycleConfig {
+        /*
+            instead of "NetworkClient implements InitializingBean, DisposableBean", use this.
+            @Bean(initMethod = ...) uses meta configure data, so can apply initializing/disposal method to external lib that cannot modify.
 
-        @Bean
+            default destroyMethod is "(inferred)". : destroyMethod = "(inferred)"
+            what for (inferred)?
+
+            if annotation is @Bean(initMethod = "init") and end,
+            destroyMethod searches NetworkClient class if there's naming "close" or "shutdown".
+            if this method existed, destroyMethod calls automatically.
+
+            and if you don't want to use this "searching", you do type -> @Bean(initMethod = "init", destroyMethod = "")
+        */
+        @Bean(initMethod = "init", destroyMethod = "close")
         public NetworkClient networkClient() {
             NetworkClient networkClient = new NetworkClient();
             networkClient.setUrl("http://hello-spring.dev");
