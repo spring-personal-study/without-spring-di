@@ -37,7 +37,8 @@ public class BeanLifeCycleTest {
 
             and if you don't want to use this "searching", you do type -> @Bean(initMethod = "init", destroyMethod = "")
         */
-        @Bean(initMethod = "init", destroyMethod = "close")
+        //@Bean(initMethod = "init", destroyMethod = "close")
+        @Bean
         public NetworkClient networkClient() {
             NetworkClient networkClient = new NetworkClient();
             networkClient.setUrl("http://hello-spring.dev");
