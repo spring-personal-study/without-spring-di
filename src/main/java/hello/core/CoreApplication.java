@@ -20,7 +20,7 @@ public class CoreApplication {
 /*
 	// run without using Spring Framework
 	public static void main(String[] args) {
-		AppConfig appConfig = new AppConfig();
+		AppConfig appConfig = new AppConfig();d
 		MemberService memberService = appConfig.memberService();
 		OrderService orderService = appConfig.orderService();
 

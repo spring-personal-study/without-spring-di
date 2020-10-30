@@ -1,6 +1,6 @@
 package hello.core.member;
 
-public class Member {
+public final class Member {
     private final Long id;
     private final String name;
     private final Grade grade;
@@ -10,11 +10,16 @@ public class Member {
         this.name = name;
         this.grade = grade;
     }
-
+    /**
+     * @return MemberId;
+     */
     public Long getId() {
         return id;
     }
 
+    /**
+    * @return MemberName;
+    */
     public String getName() {
         return name;
     }
@@ -23,13 +28,17 @@ public class Member {
         return grade;
     }
 
+
+    /**
+     * @return toString
+     */
     @Override
     public String toString() {
-        return "Member{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", grade=" + grade +
-                '}';
+        return "Member{"
+                + "id=" + id
+                + ", name='" + name + '\''
+                + ", grade=" + grade
+                + '}';
     }
 }
 

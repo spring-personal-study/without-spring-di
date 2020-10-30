@@ -12,7 +12,6 @@ import javax.annotation.PreDestroy;
 //recentest spring strongly recommends use @PostConstruct & @PreDestroy, but when work with external lib, use @Bean(initMethod = "init", destroyMethod = "close")
 public class NetworkClient {
     private String url;
-
     public NetworkClient() {
         System.out.println("NetworkClient.NetworkClient url =" + url);
     }
